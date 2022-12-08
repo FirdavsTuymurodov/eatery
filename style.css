@@ -10,4 +10,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.about_section{
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about_text{
+    max-width: 500px;
+    margin: auto;
+    letter-spacing: 1px;
+    margin: 0 20px;
+}
+
+.about_text h6{
+    color: #bfbdbd;
+    margin: 7px 0;
+}
+
+.about_text h1{
+    margin: 18px 0;
+}
+
+.about_text p{
+    margin: 15px 0;
+    color: var(--graycolor);
+}
+.about_img{
+    max-width: 500px;
+}
+
+.about_img img{
+    width: 100%;
+    height: auto;
+}
+
+
