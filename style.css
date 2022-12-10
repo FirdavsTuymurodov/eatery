@@ -363,6 +363,75 @@ header {
   margin: 1.5rem 0 10px;
 }
 
+.eatery_contact_section {
+  max-width: 1250px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.eatery_maps {
+  width: 580px;
+  height: 500px;
+  margin: 0 17px;
+}
+
+.eatery_maps p iframe {
+  width: 100%;
+}
+
+form {
+  width: 580px;
+  margin: 0 17px;
+}
+
+.eatery_contact_title h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 17px 0;
+}
+
+.eatery_input input {
+  width: 47.7%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+  font-size: 17px;
+  font-weight: 10;
+  margin: 0 10px 40px 0;
+}
+form > input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  font-size: 17px;
+  font-weight: 50;
+  margin: 0 10px 40px 0;
+}
+
+form > textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+}
+
+form > button {
+  width: 100%;
+  padding: 13px 0;
+  border: none;
+  background-color: #ce3232;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+form > button:hover {
+  background-color: black;
+}
+
 @media only screen and (max-width: 945px) {
   .info {
     display: none;
