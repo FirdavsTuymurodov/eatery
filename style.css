@@ -432,6 +432,99 @@ form > button:hover {
   background-color: black;
 }
 
+footer {
+  padding: 7rem 1rem;
+}
+
+.reservation > p {
+  color: var(--graycolor);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.address,
+.reservation,
+.links {
+  margin-top: 2rem;
+}
+
+.address > p {
+  color: var(--graycolor);
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 1rem;
+}
+
+.footer_wrapper {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reservation > p:nth-of-type(2):hover {
+  color: var(--redcolor);
+}
+
+.time {
+  width: 360px;
+  border-radius: 20px;
+  color: white;
+  height: 250px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://media.istockphoto.com/id/923371352/photo/barman-making-an-alcoholic-drink-with-ice-in-a-cocktail-glass.jpg?b=1&s=170667a&w=0&k=20&c=Ss_VRvwLCn0dftfbTWbCKhOP29k8e5U55u8EUx8H-BE=);
+}
+
+.time_overlay {
+  color: white;
+  width: 100%;
+  padding: 2rem 2rem 2rem 3rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.662);
+}
+
+.time_overlay > p:nth-of-type(1) {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.551);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.date {
+  margin-top: 1rem;
+}
+
+.date > p:nth-of-type(2) {
+  color: rgba(255, 255, 255, 0.551);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.links > i {
+  color: var(--redcolor);
+  padding: 1rem;
+  margin-top: 5px;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.links > i:hover {
+  background-color: var(--redcolor);
+  color: white;
+}
+
+.links > p {
+  margin-top: 2rem;
+  color: var(--graycolor);
+  font-size: 15px;
+  line-height: 22px;
+}
+
 @media only screen and (max-width: 945px) {
   .info {
     display: none;
@@ -463,6 +556,10 @@ form > button:hover {
   .about_foods {
     height: auto;
     grid-template-columns: auto;
+  }
+
+  .time {
+    width: 100%;
   }
 }
 
