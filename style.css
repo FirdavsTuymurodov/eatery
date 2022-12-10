@@ -278,11 +278,18 @@ header {
 
 .about_foods > article {
   border: 1px solid black;
+  overflow: hidden;
 }
 
 .about_foods > article > img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.about_foods > article:hover img {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 945px) {
