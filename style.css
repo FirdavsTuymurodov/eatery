@@ -18,6 +18,8 @@ nav {
   position: fixed;
   z-index: 999;
   width: 100%;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .navbar {
@@ -28,7 +30,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: #000;
 }
 
 .navbar > h1 {
@@ -61,7 +63,7 @@ nav {
 
 .about_us a {
   text-decoration: none;
-  color: white;
+  color: #000;
   font-size: 14px;
   font-weight: 600;
   transition: 0.5s ease;
