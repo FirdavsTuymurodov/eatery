@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -130,154 +130,332 @@ header {
   background-color: var(--redcolor);
 }
 
-
-
-
-.about_section{
-    max-width: 1200px;
-    margin: 2rem auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.about_section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.about_text{
-    max-width: 500px;
-    margin: auto;
-    letter-spacing: 1px;
-    margin: 0 20px;
+.about_text {
+  max-width: 500px;
+  margin: auto;
+  letter-spacing: 1px;
+  margin: 0 20px;
 }
 
-.about_text h6{
-    color: #bfbdbd;
-    margin: 7px 0;
+.about_text h6 {
+  color: #bfbdbd;
+  margin: 7px 0;
 }
 
-.about_text h1{
-    margin: 18px 0;
+.about_text h1 {
+  margin: 18px 0;
 }
 
-.about_text p{
-    margin: 15px 0;
-    color: var(--graycolor);
+.about_text p {
+  margin: 15px 0;
+  color: var(--graycolor);
 }
-.about_img{
-    max-width: 500px;
-}
-
-.about_img img{
-    width: 100%;
-    height: auto;
+.about_img {
+  max-width: 500px;
 }
 
-.chefs_section{
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 4rem;
+.about_img img {
+  width: 100%;
+  height: auto;
 }
 
-.chefs_section  p{
-    font-size: 12px;
-    color: #bfbdbd;
-    margin: 15px 0 3rem 0;
-    font-weight: 700;
-
+.chefs_section {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 4rem;
 }
 
-.article_wrapper{
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: auto;
-    flex-wrap: wrap;
+.chefs_section p {
+  font-size: 12px;
+  color: #bfbdbd;
+  margin: 15px 0 3rem 0;
+  font-weight: 700;
 }
 
-.img{
-    position: relative;
-    overflow: hidden;
+.article_wrapper {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
-.img > img{
-    width: 380px;
-    height: auto;
-    transition: 0.5s ease;
+.img {
+  position: relative;
+  overflow: hidden;
 }
 
-.overlay{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0%;
-    overflow: hidden;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.803);
-    right: 0;
-    transition: 0.5s ease;
+.img > img {
+  width: 380px;
+  height: auto;
+  transition: 0.5s ease;
 }
 
-.overlay > h1{
-    font-size: 25px;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.803);
+  right: 0;
+  transition: 0.5s ease;
 }
 
-.i_div > i{
-    margin: 1rem 5px;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.096);
-    color: #d9d9d9 !important;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    transition: 0.3s ease;  
+.overlay > h1 {
+  font-size: 25px;
 }
 
-.i_div > i:hover{
-    background-color: #ce3232;
+.i_div > i {
+  margin: 1rem 5px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.096);
+  color: #d9d9d9 !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s ease;
 }
 
-.img:hover .overlay{
-    height: 100%;
+.i_div > i:hover {
+  background-color: #ce3232;
+}
+
+.img:hover .overlay {
+  height: 100%;
 }
 
 .img:hover > img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.article_wrapper > article > h1{
-    margin-top: 2rem;
-    font-size: 24px;
+.article_wrapper > article > h1 {
+  margin-top: 2rem;
+  font-size: 24px;
 }
 
+.menu_section {
+  padding: 4rem 0 0;
+}
 
-footer{
+.menu_section_title {
+  text-align: center;
+  color: var(--blackcolor);
+}
+
+.menu_section_title > h1 {
+  font-size: 25px;
+}
+
+.menu_section_title > p {
+  font-size: 12px;
+  color: #bfbdbd;
+  margin: 15px 0 3rem;
+  font-weight: 700;
+}
+
+.about_foods {
+  height: 700px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.about_foods > article {
+  overflow: hidden;
+  position: relative;
+}
+
+.about_foods > article > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.about_foods > article:hover img {
+  transform: scale(1.1);
+}
+
+.overlay1 {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  color: white;
+  opacity: 0;
+  transition: 0.7s ease;
+}
+
+.overlay_info,
+.overlay1 > h2 {
+  transform: translateY(2rem);
+  transition: 0.5s ease;
+}
+
+.overlay_info > h1 {
+  font-size: 22px;
+}
+
+.overlay_info > p {
+  font-size: 11px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.about_foods > article:hover .overlay1 {
+  opacity: 1;
+}
+
+.about_foods > article:hover .overlay_info,
+.about_foods > article:hover .overlay1 > h2 {
+  transform: translateY(0.5rem);
+}
+
+.testimonials_section {
+  height: 400px;
+  background-image: url(https://images.unsplash.com/photo-1665116625934-f06f9e995da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
+  justify-content: center;
+}
+
+.wrapper > h1 {
+  font-size: 32px;
+}
+
+.wrapper > p {
+  font-weight: 300;
+  color: #b2b2b2;
+  margin: 1.5rem 0 10px;
+}
+
+.eatery_contact_section {
+  max-width: 1250px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.eatery_maps {
+  width: 580px;
+  height: 500px;
+  margin: 0 17px;
+}
+
+.eatery_maps p iframe {
+  width: 100%;
+}
+
+form {
+  width: 580px;
+  margin: 0 17px;
+}
+
+.eatery_contact_title h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 17px 0;
+}
+
+.eatery_input input {
+  width: 47.7%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+  font-size: 17px;
+  font-weight: 10;
+  margin: 0 10px 40px 0;
+}
+form > input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  font-size: 17px;
+  font-weight: 50;
+  margin: 0 10px 40px 0;
+}
+
+form > textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+}
+
+form > button {
+  width: 100%;
+  padding: 13px 0;
+  border: none;
+  background-color: #ce3232;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+form > button:hover {
+  background-color: black;
+}
+
+footer {
   padding: 7rem 1rem;
 }
 
-.reservation > p{
+.reservation > p {
   color: var(--graycolor);
   font-size: 14px;
-  line-height: 22px; 
+  line-height: 22px;
 }
 
 .address,
 .reservation,
-.links{
+.links {
   margin-top: 2rem;
 }
 
-.address > p{
+.address > p {
   color: var(--graycolor);
   font-size: 14px;
   line-height: 22px;
   margin-top: 1rem;
 }
 
-.footer_wrapper{
+.footer_wrapper {
   margin: auto;
   max-width: 1200px;
   display: flex;
@@ -287,11 +465,11 @@ footer{
   justify-content: space-between;
 }
 
-.reservation >p:nth-of-type(2):hover{
+.reservation > p:nth-of-type(2):hover {
   color: var(--redcolor);
 }
 
-.time{
+.time {
   width: 360px;
   border-radius: 20px;
   color: white;
@@ -302,7 +480,7 @@ footer{
   background-image: url(https://media.istockphoto.com/id/923371352/photo/barman-making-an-alcoholic-drink-with-ice-in-a-cocktail-glass.jpg?b=1&s=170667a&w=0&k=20&c=Ss_VRvwLCn0dftfbTWbCKhOP29k8e5U55u8EUx8H-BE=);
 }
 
-.time_overlay{
+.time_overlay {
   color: white;
   width: 100%;
   padding: 2rem 2rem 2rem 3rem;
@@ -310,24 +488,24 @@ footer{
   background-color: rgba(0, 0, 0, 0.662);
 }
 
-.time_overlay >p:nth-of-type(1){
+.time_overlay > p:nth-of-type(1) {
   margin-top: 1rem;
   color: rgba(255, 255, 255, 0.551);
   font-size: 15px;
   line-height: 22px;
 }
 
-.date{
+.date {
   margin-top: 1rem;
 }
 
-.date >p:nth-of-type(2){
+.date > p:nth-of-type(2) {
   color: rgba(255, 255, 255, 0.551);
   font-size: 15px;
   line-height: 22px;
 }
 
-.links > i{
+.links > i {
   color: var(--redcolor);
   padding: 1rem;
   margin-top: 5px;
@@ -335,12 +513,12 @@ footer{
   transition: 0.5s ease;
 }
 
-.links > i:hover{
+.links > i:hover {
   background-color: var(--redcolor);
   color: white;
 }
 
-.links > p{
+.links > p {
   margin-top: 2rem;
   color: var(--graycolor);
   font-size: 15px;
@@ -348,49 +526,69 @@ footer{
 }
 
 @media only screen and (max-width: 945px) {
-    .info {
-      display: none;
-    }
-  
-    .about_us > i {
-      display: block;
-    }
-  
-    .header_info > h1 {
-      font-size: 2rem;
-    }
+  .info {
+    display: none;
   }
 
-  @media only screen and (max-width: 800px){
-    .img > img{
-     width: 100%;   
-    }
+  .about_us > i {
+    display: block;
+  }
 
-    .chefs_section {
-        padding: 5rem 1rem;
-    }
+  .header_info > h1 {
+    font-size: 2rem;
+  }
 
-    .time{
-      width: 100%;
-    }
+  .about_foods {
+    height: 900px;
+    grid-template-columns: auto auto;
+  }
 }
-  
-  @media only screen and (max-width: 600px) {
-    .navbar > ul {
-      display: none;
-    }
-  
-    .header_info > h1 {
-      font-size: 1.5rem;
-    }
-  
-    .header_info > h1 > br {
-      display: none;
-    }
-  
-    .header_info > p {
-      font-size: 14px;
-    }
+
+@media only screen and (max-width: 800px) {
+  .img > img {
+    width: 100%;
   }
 
+  .chefs_section {
+    padding: 5rem 1rem;
+  }
 
+  .about_foods {
+    height: auto;
+    grid-template-columns: auto;
+  }
+
+  .time {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar > ul {
+    display: none;
+  }
+
+  .header_info > h1 {
+    font-size: 1.5rem;
+  }
+
+  .header_info > h1 > br {
+    display: none;
+  }
+
+  .header_info > p {
+    font-size: 14px;
+  }
+
+  .overlay_info > h1 {
+    font-size: 17px;
+  }
+
+  .overlay_info > p {
+    display: 14px;
+  }
+
+  .overlay > h2 {
+    font-size: 16px;
+  }
+}
