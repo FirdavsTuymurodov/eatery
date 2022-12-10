@@ -250,7 +250,6 @@ header {
 }
 
 .menu_section {
-  padding: 0rem 1rem;
   border: 1px solid red;
 }
 
@@ -261,13 +260,29 @@ header {
 
 .menu_section_title > h1 {
   font-size: 25px;
-  margin-bottom: 15px;
 }
 
 .menu_section_title > p {
-  color: var(--graycolor);
   font-size: 12px;
-  font-weight: 600;
+  color: #bfbdbd;
+  margin: 15px 0 3rem;
+  font-weight: 700;
+}
+
+.about_foods {
+  border: 1px solid red;
+  height: 700px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.about_foods > article {
+  border: 1px solid black;
+}
+
+.about_foods > article > img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 945px) {
